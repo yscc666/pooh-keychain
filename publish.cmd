@@ -4,7 +4,7 @@ setlocal
 title Publish Pooh site to GitHub Pages
 cd /d "%~dp0"
 
-set "OWNER=gaolenmanbo666-glitch"
+set "OWNER=yscc666"
 set "REPO=pooh-keychain"
 set "URL=https://github.com/%OWNER%/%REPO%.git"
 if not "%~1"=="" set "URL=%~1"

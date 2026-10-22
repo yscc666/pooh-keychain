@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>蜂蜜罐小�?· 照片驱动�?3D 重建</title>
-<meta name="description" content="根据 6 张参考照片重建的毛绒小熊蜂蜜罐钥匙扣 3D 模型：单一水密曲面�?6,184 三角面�? 种基础 PBR 材质，可交互查看与下�?GLB�?>
+<title>蜂蜜罐小熊 · 照片驱动的 3D 重建</title>
+<meta name="description" content="根据 6 张参考照片重建的毛绒小熊蜂蜜罐钥匙扣 3D 模型：单一水密曲面、56,184 三角面、7 种基础 PBR 材质，可交互查看与下载 GLB。">
 <meta name="theme-color" content="#f6f1e7">
 <meta property="og:type" content="website">
-<meta property="og:title" content="蜂蜜罐小�?· 照片驱动�?3D 重建">
-<meta property="og:description" content="照片测量轮廓 �?旋转体曲�?�?三角面布�?�?GLB�?>
+<meta property="og:title" content="蜂蜜罐小熊 · 照片驱动的 3D 重建">
+<meta property="og:description" content="照片测量轮廓 → 旋转体曲面 → 三角面布线 → GLB。">
 <meta property="og:image" content="assets/img/hero.webp">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preload" as="image" href="assets/img/poster.webp">
@@ -20,7 +20,7 @@
 <header class="topbar">
   <a class="brand" href="#top">
     <span class="brand-dot"></span>
-    <span>蜂蜜罐小�?/span>
+    <span>蜂蜜罐小熊</span>
   </a>
   <nav class="nav">
     <a href="#model">模型</a>
@@ -36,19 +36,22 @@
   <!-- ───────────────────────── 01  hero ───────────────────────── -->
   <section class="hero">
     <div class="hero-copy">
-      <p class="eyebrow"><span>Specimen&nbsp;No.&nbsp;001</span><span class="rule"></span><span>毛绒玩具 / 钥匙�?/span></p>
-      <h1>蜂蜜罐小�?br><em>照片驱动�?3D 重建</em></h1>
+      <p class="eyebrow"><span>Specimen&nbsp;No.&nbsp;001</span><span class="rule"></span><span>毛绒玩具 / 钥匙扣</span></p>
+      <h1>蜂蜜罐小熊<br><em>照片驱动的 3D 重建</em></h1>
       <p class="lede">
-        �?6 张手机照片为唯一输入：先分割出毛绒轮廓并逐行测量半径�?        再旋成一张连续封闭曲面，最后补上爪垫、卷曲缎带耳、罐带浮雕与五金�?        正面剪影与照片逐行宽度误差多在 <strong>±5%</strong> 以内�?      </p>
+        以 6 张手机照片为唯一输入：先分割出毛绒轮廓并逐行测量半径，
+        再旋成一张连续封闭曲面，最后补上爪垫、卷曲缎带耳、罐带浮雕与五金。
+        正面剪影与照片逐行宽度误差多在 <strong>±5%</strong> 以内。
+      </p>
       <dl class="chips">
-        <div><dt>三角�?/dt><dd>56,184</dd></div>
+        <div><dt>三角面</dt><dd>56,184</dd></div>
         <div><dt>部件</dt><dd>17</dd></div>
         <div><dt>材质</dt><dd>7</dd></div>
         <div><dt>尺寸</dt><dd>69×61×151<span>mm</span></dd></div>
       </dl>
       <div class="cta">
         <a class="btn btn-primary" href="#download">下载 GLB</a>
-        <a class="btn btn-ghost" href="#process">看建模过�?/a>
+        <a class="btn btn-ghost" href="#process">看建模过程</a>
       </div>
     </div>
 
@@ -57,7 +60,7 @@
         <model-viewer id="mv"
           src="assets/model/pooh_keychain.glb"
           poster="assets/img/poster.webp"
-          alt="蜂蜜罐小熊毛绒钥匙扣的三维模型，可拖拽旋�?
+          alt="蜂蜜罐小熊毛绒钥匙扣的三维模型，可拖拽旋转"
           camera-controls
           touch-action="pan-y"
           auto-rotate auto-rotate-delay="1600" rotation-per-second="16deg"
@@ -80,7 +83,7 @@
           <button class="tool" data-action="fullscreen" title="全屏">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5v2H6v3H4zm11-5h5v5h-2V6h-3V4zM4 15h2v3h3v2H4v-5zm14 0h2v5h-5v-2h3v-3z"/></svg>
           </button>
-          <button class="tool" data-action="ar" title="�?AR 中查�?>
+          <button class="tool" data-action="ar" title="在 AR 中查看">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3 7.5v9L12 21l9-4.5v-9L12 3zm0 2.2 6.5 3.3L12 11.7 5.5 8.5 12 5.2zM5 10.3l6 3v5.4l-6-3v-5.4zm8 8.4v-5.4l6-3v5.4l-6 3z"/></svg>
           </button>
         </div>
@@ -89,16 +92,16 @@
 
       <div class="thumbs">
         <figure data-zoom="assets/img/view_front.webp" class="is-active">
-          <img src="assets/img/view_front.webp" alt="正视�? loading="lazy"><figcaption>正视</figcaption>
+          <img src="assets/img/view_front.webp" alt="正视图" loading="lazy"><figcaption>正视</figcaption>
         </figure>
         <figure data-zoom="assets/img/view_quarter.webp">
           <img src="assets/img/view_quarter.webp" alt="三分之四视图" loading="lazy"><figcaption>三分之四</figcaption>
         </figure>
         <figure data-zoom="assets/img/view_side.webp">
-          <img src="assets/img/view_side.webp" alt="侧视�? loading="lazy"><figcaption>侧视</figcaption>
+          <img src="assets/img/view_side.webp" alt="侧视图" loading="lazy"><figcaption>侧视</figcaption>
         </figure>
         <figure data-zoom="assets/img/view_back.webp">
-          <img src="assets/img/view_back.webp" alt="背视�? loading="lazy"><figcaption>背视</figcaption>
+          <img src="assets/img/view_back.webp" alt="背视图" loading="lazy"><figcaption>背视</figcaption>
         </figure>
       </div>
     </div>
@@ -109,19 +112,19 @@
     <header class="section-head">
       <span class="idx">01</span>
       <h2>规格</h2>
-      <p>按标本档案习惯记录：真实尺寸、面数、拓扑健康度与坐标朝向�?/p>
+      <p>按标本档案习惯记录：真实尺寸、面数、拓扑健康度与坐标朝向。</p>
     </header>
 
     <div class="spec-grid">
       <div class="spec-card">
         <h3>几何</h3>
         <dl>
-          <div><dt>三角�?/dt><dd>56,184</dd></div>
+          <div><dt>三角面</dt><dd>56,184</dd></div>
           <div><dt>顶点</dt><dd>28,141</dd></div>
           <div><dt>主体面数</dt><dd>48,960</dd></div>
           <div><dt>非流形边</dt><dd>0</dd></div>
           <div><dt>孤立顶点</dt><dd>0</dd></div>
-          <div><dt>UV 图层</dt><dd>每件 1 �?/dd></div>
+          <div><dt>UV 图层</dt><dd>每件 1 套</dd></div>
         </dl>
       </div>
       <div class="spec-card">
@@ -129,9 +132,9 @@
         <dl>
           <div><dt>毛绒本体</dt><dd>57.5 × 60.6 × 98.4</dd></div>
           <div><dt>含耳与爪垫</dt><dd>69.4 × 60.6 × 101.0</dd></div>
-          <div><dt>含五�?/dt><dd>69.4 × 60.6 × 150.7</dd></div>
+          <div><dt>含五金</dt><dd>69.4 × 60.6 × 150.7</dd></div>
           <div><dt>场景单位</dt><dd>公制 · 1 BU = 1 m</dd></div>
-          <div><dt>朝向</dt><dd>脸朝 +Z（glTF�?/dd></div>
+          <div><dt>朝向</dt><dd>脸朝 +Z（glTF）</dd></div>
           <div><dt>原点</dt><dd>底部中心</dd></div>
         </dl>
       </div>
@@ -154,41 +157,47 @@
     <header class="section-head">
       <span class="idx">02</span>
       <h2>从照片到模型</h2>
-      <p>轮廓不是目测描的：先把主体从背景里分离，再逐行读出左右边缘�?/p>
+      <p>轮廓不是目测描的：先把主体从背景里分离，再逐行读出左右边缘。</p>
     </header>
 
     <ol class="steps">
       <li><span class="step-no">01</span><h3>分离主体</h3>
         <p>主体是全画面唯一的强暖色物体。以「低饱和」为可通行区域从四边洪泛填充，
-           填不到的地方就是主体——自动忽略中性投影与金属挂环，且不会在绒毛内部留洞�?/p></li>
+           填不到的地方就是主体——自动忽略中性投影与金属挂环，且不会在绒毛内部留洞。</p></li>
       <li><span class="step-no">02</span><h3>测量轮廓</h3>
         <p>逐行取最长连续段得到左右边缘，做离群剔除、中值与对称化，
-           输出 200 点归一化半径剖面；同时定位毛绒�?底、中线与棕色罐带区间�?/p></li>
+           输出 200 点归一化半径剖面；同时定位毛绒顶/底、中线与棕色罐带区间。</p></li>
       <li><span class="step-no">03</span><h3>旋成曲面</h3>
-        <p>剖面旋成 96 �?× 255 环的连续曲面。罐底用解析圆弧收口�?           头顶用实测穹顶曲率半径闭合，罐带用材质分界加 0.55&nbsp;mm 浮雕�?/p></li>
+        <p>剖面旋成 96 段 × 255 环的连续曲面。罐底用解析圆弧收口，
+           头顶用实测穹顶曲率半径闭合，罐带用材质分界加 0.55&nbsp;mm 浮雕。</p></li>
       <li><span class="step-no">04</span><h3>补回被挡住的细节</h3>
-        <p>正面轮廓在头部下沿其实是「头的投影」，更细的罐体被头挡住�?           按照片里 t�?.42 的折痕重建台阶——正面剪影不变，3/4 视角才有正确的肩部外挑�?/p></li>
+        <p>正面轮廓在头部下沿其实是「头的投影」，更细的罐体被头挡住。
+           按照片里 t≈0.42 的折痕重建台阶——正面剪影不变，3/4 视角才有正确的肩部外挑。</p></li>
     </ol>
 
     <figure class="fig ref-sheet" data-zoom="assets/img/ref_sheet.webp">
-      <img src="assets/img/ref_sheet.webp" alt="���Ųο���Ƭ�����桢���ӡ������������ķ�֮���Ƕ�" loading="lazy">
-      <figcaption>ȫ�������زģ�6 ���ֻ���Ƭ������ / ���� / ���� / �����ķ�֮���Ƕȣ��� ����Ŵ�</figcaption>
+      <img src="assets/img/ref_sheet.webp" alt="六张参考照片：正面、俯视、仰视与三个四分之三角度" loading="lazy">
+      <figcaption>全部输入素材：6 张手机照片（正面 / 俯视 / 仰视 / 三个四分之三角度）· 点击放大</figcaption>
     </figure>
 
     <div class="compare-grid">
       <figure class="fig" data-zoom="assets/img/compare.webp">
-        <img src="assets/img/compare.webp" alt="左：参考照片；右：模型正视图渲�? loading="lazy">
-        <figcaption><b>�?/b> 参考照片（原图裁切）　<b>�?/b> 模型正视图渲染　·　点击放大</figcaption>
+        <img src="assets/img/compare.webp" alt="左：参考照片；右：模型正视图渲染" loading="lazy">
+        <figcaption><b>左</b> 参考照片（原图裁切）　<b>右</b> 模型正视图渲染　·　点击放大</figcaption>
       </figure>
       <figure class="fig" data-zoom="assets/img/silhouette_diff.webp">
-        <img src="assets/img/silhouette_diff.webp" alt="轮廓差异�? loading="lazy">
-        <figcaption>轮廓叠差�?span class="sw sw-blue"></span>重合
-          <span class="sw sw-green"></span>仅照�?          <span class="sw sw-red"></span>仅模�?/figcaption>
+        <img src="assets/img/silhouette_diff.webp" alt="轮廓差异图" loading="lazy">
+        <figcaption>轮廓叠差：<span class="sw sw-blue"></span>重合
+          <span class="sw sw-green"></span>仅照片
+          <span class="sw sw-red"></span>仅模型</figcaption>
       </figure>
     </div>
 
     <p class="note">
-      校验结果：按底边对齐、按高度归一化后，剪�?<strong>IoU = 0.837</strong>�?      宽高�?<strong>0.685</strong>（照�?0.667），逐行宽度平均误差 <strong>7.9%</strong>�?      差异主要来自绒毛边缘的虚化（照片剪影本身�?±5% 的不确定度）与耳朵上沿�?1&nbsp;mm 的高度差�?    </p>
+      校验结果：按底边对齐、按高度归一化后，剪影 <strong>IoU = 0.837</strong>，
+      宽高比 <strong>0.685</strong>（照片 0.667），逐行宽度平均误差 <strong>7.9%</strong>。
+      差异主要来自绒毛边缘的虚化（照片剪影本身有 ±5% 的不确定度）与耳朵上沿约 1&nbsp;mm 的高度差。
+    </p>
   </section>
 
   <!-- ───────────────────────── 04  topology ───────────────────────── -->
@@ -196,12 +205,12 @@
     <header class="section-head">
       <span class="idx">03</span>
       <h2>布线</h2>
-      <p>主体是纯四边形的旋转体，导出前统一三角化，因此三角面走向跟随经纬线，没有乱三角与重叠面�?/p>
+      <p>主体是纯四边形的旋转体，导出前统一三角化，因此三角面走向跟随经纬线，没有乱三角与重叠面。</p>
     </header>
     <div class="topo-grid">
       <figure class="fig" data-zoom="assets/img/topology.webp">
         <img src="assets/img/topology.webp" alt="主体线框" loading="lazy">
-        <figcaption>主体线框 · 96 �?× 255 �?/figcaption>
+        <figcaption>主体线框 · 96 段 × 255 环</figcaption>
       </figure>
       <figure class="fig" data-zoom="assets/img/topology_zoom.webp">
         <img src="assets/img/topology_zoom.webp" alt="头部线框特写" loading="lazy">
@@ -215,13 +224,13 @@
     <header class="section-head">
       <span class="idx">04</span>
       <h2>材质</h2>
-      <p>7 个纯 Principled BSDF 基础材质，不含贴图，所�?<code>.blend</code> �?<code>.glb</code> 在任何查看器里表现一致�?/p>
+      <p>7 个纯 Principled BSDF 基础材质，不含贴图，所以 <code>.blend</code> 与 <code>.glb</code> 在任何查看器里表现一致。</p>
     </header>
     <div class="swatches">
       <div class="sw-item"><span class="sw-chip" style="--c:#E7DA82"></span>
-        <b>毛绒�?/b><code>M_PlushYellow</code><i>#E7DA82 · 粗糙 0.93 · 绒面 0.3</i></div>
+        <b>毛绒黄</b><code>M_PlushYellow</code><i>#E7DA82 · 粗糙 0.93 · 绒面 0.3</i></div>
       <div class="sw-item"><span class="sw-chip" style="--c:#6B3B27"></span>
-        <b>罐带�?/b><code>M_BandBrown</code><i>#6B3B27 · 粗糙 0.90</i></div>
+        <b>罐带棕</b><code>M_BandBrown</code><i>#6B3B27 · 粗糙 0.90</i></div>
       <div class="sw-item"><span class="sw-chip" style="--c:#5B3623"></span>
         <b>耳棕</b><code>M_EarBrown</code><i>#5B3623 · 粗糙 0.90</i></div>
       <div class="sw-item"><span class="sw-chip" style="--c:#C2541F"></span>
@@ -240,35 +249,37 @@
     <header class="section-head">
       <span class="idx">05</span>
       <h2>下载</h2>
-      <p>GLB 可直接拖�?Blender / Unity / Unreal / Three.js / Windows 3D 查看器；.blend 保留完整材质、灯光与相机�?/p>
+      <p>GLB 可直接拖进 Blender / Unity / Unreal / Three.js / Windows 3D 查看器；.blend 保留完整材质、灯光与相机。</p>
     </header>
     <div class="dl-grid">
       <a class="dl-card" href="assets/model/pooh_keychain.glb" download>
-        <span class="dl-kind">glTF 2.0 · 二进�?/span>
+        <span class="dl-kind">glTF 2.0 · 二进制</span>
         <strong>pooh_keychain.glb</strong>
-        <span class="dl-meta">1.26 MB · 56,184 三角�?· 7 材质</span>
-        <span class="dl-go">下载 �?/span>
+        <span class="dl-meta">1.26 MB · 56,184 三角面 · 7 材质</span>
+        <span class="dl-go">下载 →</span>
       </a>
-      <a class="dl-card" href="https://github.com/" target="_blank" rel="noopener" id="repo-link">
+      <a class="dl-card" href="assets/model/pooh_keychain.blend" download>
         <span class="dl-kind">Blender 工程</span>
         <strong>pooh_keychain.blend</strong>
-        <span class="dl-meta">1.44 MB · 含灯光与四视图相�?/span>
-        <span class="dl-go">在仓库中获取 �?/span>
+        <span class="dl-meta">1.44 MB · 含材质、灯光与四视图相机</span>
+        <span class="dl-go">下载 →</span>
       </a>
     </div>
     <p class="note">
-      绝对尺寸按钥匙扣常见规格设定（毛绒本体高 �?98&nbsp;mm），照片中没有可比对标物�?      因此这是设定值而非测量值；�?Blender 中整体缩放即可，几何不受影响�?    </p>
+      绝对尺寸按钥匙扣常见规格设定（毛绒本体高 ≈ 98&nbsp;mm），照片中没有可比对标物，
+      因此这是设定值而非测量值；在 Blender 中整体缩放即可，几何不受影响。
+    </p>
   </section>
 
 </main>
 
 <footer class="footer">
   <div>
-    <strong>蜂蜜罐小�?· 照片驱动�?3D 重建</strong>
+    <strong>蜂蜜罐小熊 · 照片驱动的 3D 重建</strong>
     <p>Blender 5.2.2 · 单一水密主体 · 全三角面 · 基础 PBR</p>
   </div>
   <div class="footer-meta">
-    <span>© <span id="year">2026</span> · 模型由参考照片重�?/span>
+    <span>© <span id="year">2026</span> · 模型由参考照片重建</span>
     <span>查看器：Google model-viewer</span>
   </div>
 </footer>
