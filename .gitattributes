@@ -1,0 +1,9 @@
+﻿# 二进制资源，避免换行/git 文本处理破坏
+*.glb   binary
+*.blend binary
+*.webp  binary
+*.png   binary
+*.jpg   binary
+*.js    text eol=lf
+*.css   text eol=lf
+*.html  text eol=lf
