@@ -33,8 +33,10 @@ git remote remove origin >nul 2>&1
 git remote add origin "%URL%"
 
 echo [3/4] Push main (a browser window may pop up - click Authorize)...
+:: the repo was first filled through the REST API, so the local history is
+:: unrelated to the remote one -> force-with-lease is expected here.
 git branch -M main
-git push -u origin main
+git push -u origin main --force-with-lease
 if errorlevel 1 goto PUSHFAIL
 
 echo [4/4] Open Pages settings...

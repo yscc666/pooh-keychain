@@ -42,10 +42,20 @@ npx serve .                       # Node
 
 ## 更新站点
 
-改完文件后，二选一：
+仓库里的 `main` 就是线上内容。改完文件后二选一：
 
-- **双击 `publish.cmd`** —— 自动提交、推送，并打开 Pages 设置页。
-- 命令行：`git add -A && git commit -m "update" && git push`
+- **双击 `publish.cmd`** —— 自动提交、推送，并打开仓库与 Pages 设置页。
+  首次上传走的是 GitHub REST API，本地 git 历史与远端无关，
+  所以脚本用的是 `--force-with-lease`（单人仓库下这是安全且预期的）。
+- 命令行：
+
+```bash
+git remote add origin https://github.com/yscc666/pooh-keychain.git
+git add -A && git commit -m "update" && git push -u origin main --force-with-lease
+```
+
+> 如果你习惯直接在 GitHub 网页上改文件，就别再用本地强制推送，
+> 否则会覆盖网页上的改动 —— 二选一即可。
 
 Pages 会在推送后 30–90 秒自动重建。
 
